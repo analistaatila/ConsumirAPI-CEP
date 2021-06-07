@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Consumir ViaCep</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+	</head>
+	<body>
+
+		<header>
+			<div class="container-1">
+				<h1>Consumir API ViaCep</h1>
+			</div>
+
+		</header>
+		<main>
+			<section class="container">
+				<h2>Registro de pessoas</h2>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Logradouro</th>
+							<th>Bairro</th>
+							<th>Cidade</th>
+							<th>Estado</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-pacientes">
+						<tr class="paciente" >
+							<td class="info-nome">Paulo</td>
+							<td class="info-peso">Ceará 832</td>
+							<td class="info-altura">Pituba</td>
+							<td class="info-gordura">Salvador</td>
+							<td class="info-imc">BA</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">Pedro</td>
+							<td class="info-peso">Marechal Rondom</td>
+							<td class="info-altura">Canela</td>
+							<td class="info-gordura">Salvador</td>
+							<td class="info-imc">BA</td>
+						</tr>
+
+						<tr class="paciente" >
+							<td class="info-nome">Sara</td>
+							<td class="info-peso">São Agustino</td>
+							<td class="info-altura">Comécio</td>
+							<td class="info-gordura">Salvador</td>
+							<td class="info-imc">BA</td>
+						</tr>
+
+						
+					</tbody>
+				</table>
+				<h3>Clique duas vezes na linha da tabela que o mesmo será removido!</h3>
+				
+			</section>
+		</main>
+		<section class="container" id="formulario">
+			<ul id="msgs-erros">
+
+			</ul>
+			<form id="form-adicionaa">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input class="campo" id="nome"   type="text" value="" placeholder="Digite o nome" />
+				</div>
+				<div class="grupo">
+					<label for="nome">Cep: </label>
+						<input  type="text" id="cep" value="" class="campo" placeholder="Digite seu CEP"/>
+				</div>
+				
+				<button id="adicionar-paciente" class="botao bto-principal"  >
+				Buscar
+				</button>
+				
+			</form>
+		</section>
+		<script src="js/removecoluna.js"></script>
+		<script src="js/apiCep.js"></script>
+		
+	</body>
+</html>
